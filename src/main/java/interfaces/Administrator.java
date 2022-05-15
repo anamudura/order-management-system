@@ -55,7 +55,7 @@ public class Administrator extends JFrame {
         contentPane = new JPanel();
         Color color1 = new Color(105, 79, 63);
         Color color2 = new Color(244, 173, 51);
-        Color color3 = new Color(157, 222, 227);
+        Color color3 = new Color(227, 157, 197);
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
@@ -118,126 +118,126 @@ public class Administrator extends JFrame {
 
         lblTitle = new JLabel("Title");
         lblTitle.setBounds(32, 66, 45, 13);
-        lblTitle.setForeground(Color.WHITE);
+        lblTitle.setForeground(Color.BLACK);
         contentPane.add(lblTitle);
 
         lblDay = new JLabel("Day");
         lblDay.setBounds(32, 128, 45, 13);
-        lblDay.setForeground(Color.WHITE);
+        lblDay.setForeground(Color.BLACK);
         contentPane.add(lblDay);
 
 
         lblPrice = new JLabel("Price");
         lblPrice.setBounds(153, 66, 45, 13);
-        lblPrice.setForeground(Color.WHITE);
+        lblPrice.setForeground(Color.BLACK);
         contentPane.add(lblPrice);
 
 
         lblStartHour = new JLabel("Start Hour");
         lblStartHour.setBounds(153, 128, 70, 13);
-        lblStartHour.setForeground(Color.WHITE);
+        lblStartHour.setForeground(Color.BLACK);
         contentPane.add(lblStartHour);
 
         lblEndHour = new JLabel("End Hour");
         lblEndHour.setBounds(268, 128, 120, 13);
-        lblEndHour.setForeground(Color.WHITE);
+        lblEndHour.setForeground(Color.BLACK);
         contentPane.add(lblEndHour);
 
         lblNumberOfOrders = new JLabel("Number of Orders");
         lblNumberOfOrders.setBounds(393, 128, 120, 13);
-        lblNumberOfOrders.setForeground(Color.WHITE);
+        lblNumberOfOrders.setForeground(Color.BLACK);
         contentPane.add(lblNumberOfOrders);
 
         lblValue = new JLabel("Value");
         lblValue.setBounds(540, 128, 120, 13);
-        lblValue.setForeground(Color.WHITE);
+        lblValue.setForeground(Color.BLACK);
         contentPane.add(lblValue);
 
         lblFat = new JLabel("Fat");
         lblFat.setBounds(285, 66, 45, 13);
-        lblFat.setForeground(Color.WHITE);
+        lblFat.setForeground(Color.BLACK);
         contentPane.add(lblFat);
 
         lblCalories = new JLabel("Calories");
         lblCalories.setBounds(420, 66, 49, 13);
-        lblCalories.setForeground(Color.WHITE);
+        lblCalories.setForeground(Color.BLACK);
         contentPane.add(lblCalories);
 
         lblProtein = new JLabel(" Protein");
         lblProtein.setBounds(540, 66, 45, 13);
-        lblProtein.setForeground(Color.WHITE);
+        lblProtein.setForeground(Color.BLACK);
         contentPane.add(lblProtein);
 
         lblSodium = new JLabel("Sodium");
         lblSodium.setBounds(654, 66, 45, 13);
-        lblSodium.setForeground(Color.WHITE);
+        lblSodium.setForeground(Color.BLACK);
         contentPane.add(lblSodium);
 
         administratorLabel = new JLabel("Administrator");
         administratorLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
         administratorLabel.setBounds(315, 23, 120, 35);
-        administratorLabel.setForeground(Color.WHITE);
+        administratorLabel.setForeground(Color.BLACK);
         contentPane.add(administratorLabel);
 
         btnCreateComposite = new JButton("Create Composite Product");
         btnCreateComposite.setBounds(20, 416, 200, 21);
         btnCreateComposite.setBackground(color1);
-        btnCreateComposite.setForeground(Color.WHITE);
+        btnCreateComposite.setForeground(Color.BLACK);
         contentPane.add(btnCreateComposite);
 
         btnAddToComposite = new JButton("Add to Composite Product");
         btnAddToComposite.setBounds(230, 416, 200, 21);
         btnAddToComposite.setBackground(color1);
-        btnAddToComposite.setForeground(Color.WHITE);
+        btnAddToComposite.setForeground(Color.BLACK);
         contentPane.add(btnAddToComposite);
 
         btnAddComplete = new JButton("Complete");
         btnAddComplete.setBounds(440, 416, 200, 21);
         btnAddComplete.setBackground(color1);
-        btnAddComplete.setForeground(Color.WHITE);
+        btnAddComplete.setForeground(Color.BLACK);
         contentPane.add(btnAddComplete);
 
 
         btnAdd = new JButton("Add");
         btnAdd.setBounds(334, 105, 85, 21);
         btnAdd.setBackground(color1);
-        btnAdd.setForeground(Color.WHITE);
+        btnAdd.setForeground(Color.BLACK);
         contentPane.add(btnAdd);
 
         btnEdit = new JButton("Edit");
         btnEdit.setBounds(640, 285, 85, 21);
         btnEdit.setBackground(color1);
-        btnEdit.setForeground(Color.WHITE);
+        btnEdit.setForeground(Color.BLACK);
         contentPane.add(btnEdit);
 
         btnDelete = new JButton("Delete");
         btnDelete.setBounds(640, 316, 85, 21);
         btnDelete.setBackground(color1);
-        btnDelete.setForeground(Color.WHITE);
+        btnDelete.setForeground(Color.BLACK);
         contentPane.add(btnDelete);
 
         btnReport1 = new JButton(" Report1");
         btnReport1.setBounds(195, 175, 85, 21);
         btnReport1.setBackground(color1);
-        btnReport1.setForeground(Color.WHITE);
+        btnReport1.setForeground(Color.BLACK);
         contentPane.add(btnReport1);
 
         btnReport2 = new JButton(" Report2");
         btnReport2.setBounds(286, 175, 85, 21);
         btnReport2.setBackground(color1);
-        btnReport2.setForeground(Color.WHITE);
+        btnReport2.setForeground(Color.BLACK);
         contentPane.add(btnReport2);
 
         btnReport3 = new JButton(" Report3");
         btnReport3.setBounds(381, 175, 85, 21);
         btnReport3.setBackground(color1);
-        btnReport3.setForeground(Color.WHITE);
+        btnReport3.setForeground(Color.BLACK);
         contentPane.add(btnReport3);
 
         btnReport4 = new JButton(" Report4");
         btnReport4.setBounds(472, 175, 85, 21);
         btnReport4.setBackground(color1);
-        btnReport4.setForeground(Color.WHITE);
+        btnReport4.setForeground(Color.BLACK);
         contentPane.add(btnReport4);
 
 
@@ -273,8 +273,6 @@ public class Administrator extends JFrame {
         jp2.setSize(600, 190);
         add(jp2);
         JLabel fundal = new JLabel("");
-        fundal.setIcon(new ImageIcon(getClass().getClassLoader().getResource("administratorbk.png")));
-        fundal.setBounds(0, -36, 753, 511);
         add(fundal);
     }
 

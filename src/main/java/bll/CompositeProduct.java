@@ -9,6 +9,11 @@ public class CompositeProduct extends MenuItem{
     public CompositeProduct(String title, float rating, int calories, int proteins, int fats, int sodium) {
         super(title, rating, calories, proteins, fats, sodium, 0);
     }
+
+    public CompositeProduct() {
+
+    }
+
     public float computePrice()
     {
         int p = 0;

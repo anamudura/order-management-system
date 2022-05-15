@@ -12,10 +12,17 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class BaseProduct extends MenuItem{
+    private static final long  serialVersionUID = 2243021096500390782L;
     public BaseProduct(String title, float rating, int calories, int proteins, int fats, int sodium, int price) {
         super(title, rating, calories, proteins, fats, sodium, price);
     }
-    public void ReadFile()
+
+    public BaseProduct() {
+
+    }
+
+
+    public static void ReadFile()
     {
         List<MenuItem> items = new ArrayList<MenuItem>();
         File file = new File("D:/Lab PT/PT2022_30221_Mudura_Ana_assigment_4/src/main/java/products.csv");
@@ -30,10 +37,12 @@ public class BaseProduct extends MenuItem{
                 int sodium = Integer.parseInt(value.get(5));
                 int price = Integer.parseInt(value.get(6));
                 items.add(new BaseProduct(value.get(0), rating, calories, proteins, fats, sodium, price));
+                //System.out.println(rating +" "+ calories+" " + proteins+" " + fats+" " + sodium+" " + price);
             }
             ArrayList<MenuItem> fin = (ArrayList<MenuItem>) items.stream().filter(distinctByKey(MenuItem::getTitle)).collect(Collectors.toList());
             DeliveryService.setMenu(fin);
         } catch (IOException e) {
+            System.out.println("EROARE CITIRE DIN FISIER");
             e.printStackTrace();
         }
     }
@@ -45,8 +54,7 @@ public class BaseProduct extends MenuItem{
     public void setPrice(int price) {
         super.setPrice(price);
     }
-
-
+    @Override
     public float computePrice() {
         return getPrice();
     }

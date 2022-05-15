@@ -92,4 +92,6 @@ public abstract class MenuItem implements Serializable {
     public void setNr(int nr) {
         this.nr = nr;
     }
+
+    public abstract float computePrice();
 }
