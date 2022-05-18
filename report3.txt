@@ -1,0 +1,3 @@
+Report: the clients that have ordered more than a specified number of times and the value 
+of the order was higher than a specified amount.
+Client id: 2

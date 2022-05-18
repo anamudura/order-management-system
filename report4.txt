@@ -1,0 +1,6 @@
+Report:  the products ordered within a specified day with the number of times they have 
+ been ordered.
+
+Meniu: Pickled Onions , Roasted Tomato Sauce ,  3
+
+Barbecued Shrimp  1

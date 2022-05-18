@@ -9,7 +9,7 @@ import java.awt.*;
 public class Employee extends JFrame implements Observer {
     StringBuilder stringBuilder = new StringBuilder();
     private JPanel contentPane;
-    private JLabel label;
+    private JTextField label;
     private JLabel fundal;
 
     public Employee() {
@@ -21,30 +21,29 @@ public class Employee extends JFrame implements Observer {
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
-        label = new JLabel("");
+        label = new JTextField("");
         label.setBounds(20, 20, 380, 215);
         label.setForeground(color);
         label.setFont(new Font("Tahoma", Font.BOLD, 13));
         contentPane.add(label);
 
         fundal = new JLabel("");
-        //fundal.setIcon(new ImageIcon(getClass().getClassLoader().getResource("order.jpg")));
-         fundal.setBounds(-7, -25, 505, 323);
-         contentPane.add(fundal);
+        fundal.setBounds(-7, -25, 505, 323);
+        contentPane.add(fundal);
     }
 
     @Override
     public void update(DeliveryService deliveryService) {
-        stringBuilder.append("<html>-New order-<br/>");
+        stringBuilder.append("New order yay");
         label.setText(stringBuilder.toString());
 
     }
 
-    public JLabel getLabel() {
+    public JTextField getLabel() {
         return label;
     }
 
-    public void setLabel(JLabel label) {
+    public void setLabel(JTextField label) {
         this.label = label;
     }
 }

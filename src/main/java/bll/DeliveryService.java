@@ -33,11 +33,13 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
         users.add(u2);
         users.add(u3);
     }
+
+
     /**
      * Adauga un element nou la meniu
      *
      * @param m produsul
-     * @pre m != null;
+     * @pre  m != null;
      * @post se insereeaza produsul in tabela de meniuri
      * @invariant menu!=null
      */
@@ -217,7 +219,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
             s.append(entry.getKey().getDate().toString());
             s.append("\n");
         });
-        FileWriter.write("report.txt", s.toString());
+        FileWriter.write("report1.txt", s.toString());
         assert !s.toString().equals("");
         assert isWellFormed();
 
@@ -238,7 +240,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
         menu.stream().filter(menuItem -> menuItem.getNr() > nr).forEach(menuItem -> {
             s.append(menuItem.getTitle() + " " + menuItem.getNr() + "\n");
         });
-        FileWriter.write("report.txt", s.toString());
+        FileWriter.write("report2.txt", s.toString());
         assert !s.toString().equals("");
         assert isWellFormed();
     }
@@ -265,7 +267,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
         for (String id : noDup) {
             s.append("Client id: " + id);
         }
-        FileWriter.write("report.txt", s.toString());
+        FileWriter.write("report3.txt", s.toString());
         assert !s.toString().equals("");
         assert isWellFormed();
     }
@@ -306,7 +308,7 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
         for (int i = 0; i < noDup.size(); i++) {
             s.append("\n" + noDup.get(i) + " " + nr[i] + "\n");
         }
-        FileWriter.write("report.txt", s.toString());
+        FileWriter.write("report4.txt", s.toString());
         assert !s.toString().equals("");
         assert isWellFormed();
     }
@@ -344,12 +346,12 @@ public class DeliveryService extends Observable implements IDeliveryServiceProce
     public void addToOrder(int orderID) {
         assert orderID >= 0;
         int i = 0;
-        BaseProduct item = getProduct(interfaces.Client.getTable());
+        MenuItem item = getProduct(interfaces.Client.getTable());
         for (MenuItem menuItem : menu) {
             if (menuItem.getTitle().equals(item.getTitle())) {
                 i = menuItem.getNr() + 1;
                 menuItem.setNr(i);
-                item = (BaseProduct) menuItem;
+                item =  menuItem;
             }
         }
         for (HashMap.Entry<Order, ArrayList<MenuItem>> entry : hmap.entrySet()) {

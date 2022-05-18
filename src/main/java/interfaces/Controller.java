@@ -14,10 +14,10 @@ import java.util.Random;
 
 public class Controller {
     private static Administrator administrator = new Administrator();
-    private static Employee em = new Employee();
+    //private static Employee em = new Employee();
     private int orderId2 = 0;
     private LogPage loginPage = new LogPage();
-    private Client client1 = new Client();
+    private static Client client1 = new Client();
     private dataLayer.FileWriter fileWriter;
     private StringBuilder text;
     private OrderPreview orderPreview = new OrderPreview();
@@ -37,6 +37,7 @@ public class Controller {
                             administrator.setVisible(true);
                         }
                         if (user.getRol().equals(Rol.EMPLOYEE)) {
+                            Employee em = new Employee();
                             user.setRol(Rol.EMPLOYEE);
                             deliveryService.registerObserver(em);
                             em.setVisible(true);

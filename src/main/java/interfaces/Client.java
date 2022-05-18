@@ -170,7 +170,6 @@ public class Client extends JFrame {
         contentPane.add(btnPreviewOrder);
 
         JLabel fundal = new JLabel("");
-        //fundal.setIcon(new ImageIcon(getClass().getClassLoader().getResource("clientbk.png")));
         fundal.setBounds(-2, -2, 753, 511);
         add(fundal);
     }
