@@ -34,7 +34,7 @@ public class Employee extends JFrame implements Observer {
 
     @Override
     public void update(DeliveryService deliveryService) {
-        stringBuilder.append("New order yay");
+        stringBuilder.append("New order yay\n");
         label.setText(stringBuilder.toString());
 
     }
